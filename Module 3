@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+static void Main(string[] args)
+{
+// Create a new Octopus object
+Octopus myOctopus = new Octopus("Ollie");
+
+// Print out the octopus details
+Console.WriteLine($"Name: {myOctopus.Name}");
+Console.WriteLine($"Legs: {myOctopus.Legs}");
+}
+}
+
+class Octopus
+{
+public readonly string Name;
+public readonly int Legs = 8;
+
+public Octopus(string name)
+{
+Name = name;
+}
+}
